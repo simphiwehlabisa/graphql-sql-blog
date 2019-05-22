@@ -16,14 +16,14 @@ module.exports = {
         "dialect": "mysql",
 
         dialectOptions: {
-            socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
+            //socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
             supportBigNumbers: true,
             bigNumberStrings: true
           },
 
     },
     
-
+ 
     "production": {
 
         "username": process.env.DB_USERNAME,
@@ -33,6 +33,7 @@ module.exports = {
         "database": process.env.DB_NAME,
 
         "host": process.env.DB_HOST,
+        "port": process.env.DB_PORT,
 
         "dialect": "mysql"
 
